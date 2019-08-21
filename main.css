@@ -135,6 +135,9 @@ a:hover, a:active { text-decoration-line: none; color:black }
     height: 40px;
     width: auto;
 }
+
+/*-- end footer --*/
+
 /*--- career page ---*/
 body {
     font-family: 'Yantramanav', sans-serif;
