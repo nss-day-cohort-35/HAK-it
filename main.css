@@ -135,3 +135,43 @@ a:hover, a:active { text-decoration-line: none; color:black }
     height: 40px;
     width: auto;
 }
+/*--- career page ---*/
+body {
+    font-family: 'Yantramanav', sans-serif;
+}
+.images {
+    display:flex;
+    justify-content: space-around;
+    margin: 15px;
+}
+.images img {
+    /*border: 7px solid #f5b300; */
+    border: 7px solid black;
+}
+.flex-container  {
+    display:flex;  
+    flex-flow: row;
+    align-items:flex-start;
+    justify-content: space-around;
+}  
+.first {
+    width: 75%; 
+    align-items:center;
+    border: 7px solid black; 
+    background-color:white;
+}
+.second  {
+    width: 33%;
+    vertical-align: top;
+    border: 7px solid black;
+    background-color:white;
+    padding: 10px;
+}
+#section {
+    column-count: 3;  
+}
+.third {
+    border: 7px solid black;
+    background-color:white;
+    padding: 10px;   
+}
