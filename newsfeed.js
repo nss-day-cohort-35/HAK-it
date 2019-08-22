@@ -13,6 +13,27 @@ var newsRecords = [
         image: ["ImageURL", "images/lady-gaga-logo.png"]
     },
     {
+        date: ["Date", "8/15/2019"],
+        location: ["Location", "Born This Way Foundation"],
+        title: ["Title", "Lady Gaga\'s Born This Way Foundation Gearing Up For Second \'21 Days to Be Kind\' Challenge"],
+        message: ["Message", "It\'s cool to be kind. That\'s the message from Lady Gaga\'s Born This Way Foundation, which is gearing up for its second 21 Days to Be Kind Challenge. Help us make kindness - to ourselves and to our communities - a habit by practicing an act of kindness each day from September 1st to September 21st! reads the pitch from the Foundation. We\'ll send you all the information you need to get started - including suggestions for how to be kind from our Co-Founder Lady Gaga + some of our amazing partners. Oh, and you\'ll also be entered to win a pair of tickets to an upcoming Lady Gaga show!"],
+        typeOfEvent: ["Type of event", "Challenge"],
+        collaborators: ["Collaborators", ""],
+        ticketLocation: ["Where to purchase tickets", ""],
+        image: ["ImageURL", "images/lady-gaga-news2.jpeg"]
+    },
+    {
+        date: ["Date", "August 11, 2019"],
+        location: ["Location", "FOX News"],
+        title: ["Title", "Lady Gaga to fund 162 classrooms in Dayton, El Paso and Gilroy following mass shootings"],
+        message: ["Message", "Lady Gaga will deliver comfort to three cities devastated recent mass shootings. The Bad Romance singer will provide funding for 162 classrooms in Dayton, Ohio; El Paso, Texas and Gilroy, California. My heart goes out to those who were taken from us too soon and to their families, loved ones, and communities who are left to grieve. Everyone has the right to laws that make them feel safe in their communities. In this moment, I want to channel my confusion, frustration, and fury into hope. Hope that we are there for each other and for ourselves, she wrote on Facebook on Friday. Gaga, 33, announced that she would donate to 162 classrooms through Donors Choose, an organization in which teachers can fundraise for classroom projects for their students." ],
+        typeOfEvent: ["Type of event", ""],
+        collaborators: ["Collaborators", ""],
+        ticketLocation: ["Where to purchase tickets", ""],
+        image: ["ImageURL", "images/lady-gaga-news4.jpg"]
+},
+
+    {
         date: [ "Date", "August 21, 2019" ],
         location: [ "Location", "Nashville, TN" ],
         title: [ "Title", "Lady GaGa is coming!" ],
@@ -57,7 +78,7 @@ function addArticleImage( article, item, element, element_class ) {
     const itemPics = document.createElement( element );
     itemPics.src = item;
     itemPics.alt = "News related image";
-    itemPics.style = "width: 100px; margin: .9em";
+    itemPics.style = "height: 200px; margin: .9em";
     itemPics.className = element_class;
 
     divElement.appendChild( itemPics );
@@ -83,9 +104,11 @@ function addArticle( record ) {
 }
 
 
-for( var i = 0; i < 5; i++ ) {
-    addArticle( newsRecords[0] );
-}
+
+addArticle( newsRecords[0] );
+addArticle( newsRecords[1] );
+addArticle( newsRecords[2] );
+addArticle( newsRecords[3] );
 
 
 
