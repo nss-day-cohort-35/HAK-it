@@ -21,6 +21,16 @@
     border: 1px solid green;
     border-radius: .5em;
 
-    padding: .3em;
+    padding: .5em;
     margin: .5em;
+}
+
+.newsfeed-main__article__div {
+
+    font-weight: bold;
+
+    /*border: 1px dashed yellow;*/
+
+    padding: .3em;
+    margin: .3em;
 }
