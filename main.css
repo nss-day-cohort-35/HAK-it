@@ -152,6 +152,7 @@ a:hover, a:active { text-decoration-line: none; color: white;
     height: 90%;
     width: auto;
     margin-top: 100px;
+    filter: grayscale(100%);
 }
 
 
@@ -160,6 +161,7 @@ a:hover, a:active { text-decoration-line: none; color: white;
     justify-content: center;
     width: 100%;
     height: 100vh;
+    filter: contrast(110%);
 
 }
 
@@ -203,3 +205,24 @@ body {
     background-color:white;
     padding: 10px;   
 }
+
+
+/*  ----- Divider Styling ---- */
+
+.divider-mom {
+    display: flex;
+    justify-content: center;
+}
+
+.divider-kid {
+    width: 60%;
+    background-color: white;
+    border: 7px solid black;
+}
+
+.divider-baby {
+    background-image: url(images/gold-screen-crack.png);
+    filter: opacity(25%);
+}
+
+/*  ----- End Divider Styling ---- */
