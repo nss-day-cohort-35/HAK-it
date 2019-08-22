@@ -12,7 +12,7 @@
     background-image: url(images/smoke-animated.png);
     background-repeat: repeat;
     text-align: center;
-    animation: marquee 600s infinite linear;
+    animation: marquee 1000s infinite linear;
     animation-delay: -1s;
     }
     

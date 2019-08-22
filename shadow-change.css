@@ -1,14 +1,13 @@
 .shadow-change {
-    animation: shadow-changer 20s infinite alternate;
+    animation: shadow-changer 15s infinite alternate;
     animation-delay: -1s;
   }
     @keyframes shadow-changer {
     0% {
-      filter: drop-shadow(0 0 100px rgb(110, 189, 216));
-      
+      filter: drop-shadow(0 0 100px hotpink); 
     }
   
-    100% {
-      filter: drop-shadow(0 0 100px hotpink);
+    100% {  
+      filter: drop-shadow(0 0 100px rgb(110, 189, 216));
     }
     }
