@@ -1,0 +1,29 @@
+.big-smoke {
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    background-size: 2500px;
+    filter: contrast(900%);
+    background-image: url(images/smoke-animated.png);
+    background-repeat: repeat;
+    text-align: center;
+    animation: marquee 600s infinite linear;
+    animation-delay: -1s;
+    }
+    
+    @keyframes marquee {
+    0% {
+      background-position: center 0;
+      
+    }
+  
+    100% {
+      background-position: center -3951px;
+    }
+    }
+  
