@@ -26,13 +26,13 @@ console.log( Object.keys( artists[0] ) );
 function addRecord ( item1,item2 ) {
     const item = document.createElement( 'div' );
     item.innerHTML = item1 + ": " + item2;
-    item.className="main-section__div";
+    item.className="main-section__div tight-shadow-change";
     mainSection.appendChild( item );
 }
 
 function addPics( item1, item2, imgFileName, imgAlt ) {
     const item = document.createElement( 'div' );
-    item.className="main-section__div";
+    item.className="main-section__div tight-shadow-change";
     const item_text = document.createElement( 'div' );
     /*item_text.innerHTML = artists[0].item[0] + ": " + artists[0].item[1];
 */    item_text.innerHTML = item1 + ": " + item2;
