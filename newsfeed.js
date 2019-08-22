@@ -23,8 +23,6 @@ var newsRecords = [
         image: [ "ImageURL", "url" ]
     }
 
-
-
 /*
     {
         date: ["Date", ""],
@@ -43,6 +41,7 @@ const newsFeed = document.querySelector( ".newsfeed-main" );
 
 console.log( Object.keys( newsRecords[0] ) );
 
+/* adding new element to article section */
 function addArticleElement( article, item, element, element_class ) {
     const articleElement = document.createElement( element );
     articleElement.className = element_class;
@@ -50,17 +49,7 @@ function addArticleElement( article, item, element, element_class ) {
     article.appendChild( articleElement );
 }
 
-
-/*
-function addArticleImage ( article, item, element, element_class ) {
-    const articleElement = document.createElement( 'div' );
-    articleElement.className = element_class;
-    //articleElement.innerHTML = item;
-    articleElement.src = item;
-    article.appendChild( articleElement );
-}*/
-
-
+/* adding new image to article section */
 function addArticleImage( article, item, element, element_class ) {
     const divElement = document.createElement( 'div' );
     divElement.className="newsfeed-main__article__div";
@@ -76,7 +65,7 @@ function addArticleImage( article, item, element, element_class ) {
     article.appendChild( divElement );
 }
 
-
+/* adding article section to DOM */
 function addArticle( record ) {
     const newsArticle = document.createElement( 'article' );
     newsArticle.className = "newsfeed-main__article";
@@ -93,7 +82,8 @@ function addArticle( record ) {
     newsFeed.appendChild( newsArticle );
 }
 
-for( var i = 0; i < 50; i++ ) {
+
+for( var i = 0; i < 5; i++ ) {
     addArticle( newsRecords[0] );
 }
 
