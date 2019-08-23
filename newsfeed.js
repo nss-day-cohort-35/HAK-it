@@ -31,8 +31,8 @@ var newsRecords = [
         collaborators: ["Collaborators", ""],
         ticketLocation: ["Where to purchase tickets", ""],
         image: ["ImageURL", "images/lady-gaga-news4.jpg"]
-},
-
+}
+/*
     {
         date: [ "Date", "August 21, 2019" ],
         location: [ "Location", "Nashville, TN" ],
@@ -43,7 +43,7 @@ var newsRecords = [
         ticketLocation: [ "Where to purchase tickets", "Nashville, TN" ],
         image: [ "ImageURL", "images/lady-gaga-logo.png" ]
     }
-
+*/
 /*
     {
         date: ["Date", ""],
@@ -117,7 +117,7 @@ function addArticleFeed( record ) {
 addArticle( newsRecords[0] );
 addArticle( newsRecords[1] );
 addArticle( newsRecords[2] );
-addArticle( newsRecords[3] );
+/* addArticle( newsRecords[3] ); */
 addArticleFeed();
 
 
