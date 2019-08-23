@@ -1,14 +1,13 @@
 .tight-shadow-change {
-    animation: tight-shadow-changer 20s infinite alternate;
+    animation: tight-shadow-changer 15s infinite alternate;
     animation-delay: -1s;
   }
     @keyframes tight-shadow-changer {
     0% {
-      filter: drop-shadow(0 0 7px rgb(82, 212, 255));
-      
+      filter: drop-shadow(0 0 7px rgb(255, 81, 168));   
     }
   
-    100% {
-      filter: drop-shadow(0 0 7px rgb(255, 81, 168));
+    100% { 
+      filter: drop-shadow(0 0 7px rgb(82, 212, 255));
     }
     }
