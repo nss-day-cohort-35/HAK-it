@@ -1,22 +1,54 @@
 
-.main-section__personal-data {
+.main-personal-data {
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
+    width: 100%;
+    flex-flow: column;
+    justify-content: space-around;
 
+     padding: 1.5em;
+    /*background-color: white;*/
 }
 
-.main-section__div {
-
-    width: 60%;
+.main__div {
+    width: 75%;
 
     font-size: 1.2em;
     font-family: 'Yantramanav', sans-serif;
     
     border: 6px solid black;
 
-    padding: .3em;
-    margin: .3em;
+    padding: 1.5em;
+    margin: 1.5em;
 
+    background-color: white;*/
+}
+
+.main__section {
+    width: 75%;
+    border: 6px solid black;
     background-color: white;
+    margin: 1.5em;
+    padding: 1.5em;
+
+}
+
+.main__family {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    width: 75%;
+    border: 6px solid black;
+    background-color: white;
+
+    margin: 1.5em;
+    padding: 1.5em;
+
+}
+
+.main__family-div, .main__section-div {
+
+    font-weight: bold;
+
+    padding: .8em;
 }
