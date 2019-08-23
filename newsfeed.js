@@ -41,7 +41,7 @@ var newsRecords = [
         typeOfEvent: [ "Type of event", "Consert" ],
         collaborators: [ "Collaborators", "People of Tennessee" ],
         ticketLocation: [ "Where to purchase tickets", "Nashville, TN" ],
-        image: [ "ImageURL", "url" ]
+        image: [ "ImageURL", "images/lady-gaga-logo.png" ]
     }
 
 /*
@@ -103,12 +103,22 @@ function addArticle( record ) {
     newsFeed.appendChild( newsArticle );
 }
 
+function addArticleFeed( record ) {
+    const newsArticle = document.createElement( 'article' );
+    newsArticle.className = "newsfeed-main__article";
 
+    const newsArticleIframe = document.createElement( 'iframe' );
+    newsArticleIframe.src="//rss.bloople.net/?url=https%3A%2F%2Fwww.huffpost.com%2Ftopic%2Flady-gaga%2Ffeed&limit=10&showicon=true&type=html";
+    newsArticle.appendChild( newsArticleIframe );
+
+    newsFeed.appendChild( newsArticle );
+}
 
 addArticle( newsRecords[0] );
 addArticle( newsRecords[1] );
 addArticle( newsRecords[2] );
 addArticle( newsRecords[3] );
+addArticleFeed();
 
 
 
