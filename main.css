@@ -47,7 +47,6 @@ body {
 
 .main-page {
     margin-top: 84px;
-    padding-top: 16px;
 }
 
 .lady-gaga-logo {
@@ -59,19 +58,18 @@ body {
 
 
 .nav-link {
-    font-family: 'Yantramanav', sans-serif;
+    font-family: bauer-bodoni;
     color: black;
-    font-weight: 700 !important;
 }
 
 .navbar-logo {
     display: inline-block;
-    width: 57%;
+    width: 50%;
 }
 
 .navbar-nav {
     display: inline-block;
-    width: 40%;
+    width: 47%;
     margin-right: 3%;
 }
 
@@ -94,7 +92,6 @@ body {
 
 a {
     text-decoration-line: none;
-    font-weight: 700 !important;
     
  }
 
@@ -104,6 +101,11 @@ a:focus { text-decoration-line: none; color: white;
     text-shadow: 0px 0px 4px #000000; }
 a:hover, a:active { text-decoration-line: none; color: white;
     text-shadow: 0px 0px 10px rgb(211, 30, 120); }
+
+    .current-link {
+        text-shadow: 0px 0px 10px black !important;
+        color: white !important;
+    }
 
 /* -- kw-end of navbar- */ 
 
@@ -142,18 +144,11 @@ a:hover, a:active { text-decoration-line: none; color: white;
     text-decoration-line: none;
     height: 40px;
     width: auto;
+    z-index: 5;
 }
 
 /*-- end footer --*/
 
-
-.lady-gaga-side {
-    bottom: 0;
-    height: 90%;
-    width: auto;
-    margin-top: 100px;
-    filter: grayscale(100%);
-}
 
 
 .div-lady-gaga-side {
@@ -161,8 +156,29 @@ a:hover, a:active { text-decoration-line: none; color: white;
     justify-content: center;
     width: 100%;
     height: 100vh;
-    filter: contrast(110%);
+    overflow: visible;
 
+}
+
+.lady-gaga-side {
+    height: 608px;
+    width: auto;
+    position: absolute;
+    bottom: 0px;
+}
+
+.base-cloud {
+    width: 1000px;
+    height: auto;
+    position: absolute;
+    bottom: -270px;
+}
+
+.lady-gaga-header {
+    width: 500px;
+    height: auto;
+    position: absolute;
+    bottom: -90px;
 }
 
 /*--- career page ---*/
@@ -238,6 +254,7 @@ body {
 }
 .gold-divider {
     width: 50%;
+    margin-top: 40px;
 }
 .cracks {
     height: 200px;
@@ -249,22 +266,286 @@ body {
 }
 
 
+/*--- alias style ---*/
+
+
 /*  ----- Divider Styling ---- */
 
+.divider-grandma {
+    display: flex;
+    justify-content: space-around;
+    border-top: 7px solid black;
+    flex-wrap: wrap;
+    margin: 400 0;
+}
+
 .divider-mom {
+    height: 600px;
+    width: 34%;
     display: flex;
     justify-content: center;
+    
+    margin: 100px;
 }
 
 .divider-kid {
-    width: 60%;
-    background-color: white;
-    border: 7px solid black;
-}
+height: 100%;
+width: 100%;
+display: flex;
+justify-content: center;
+position: relative;
 
-.divider-baby {
-    background-image: url(images/gold-screen-crack.png);
-    filter: opacity(25%);
 }
 
 /*  ----- End Divider Styling ---- */
+
+.globe-grandma {
+
+}
+
+.globe-mom {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 800px;
+    display: block;
+    margin: 500px auto 1100px auto;
+    border-top: 7px solid black;
+}
+
+.globe-kid {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.gaga-red {
+    height: 400px;
+    position: absolute;
+    bottom: -50px;
+}
+
+.globe {
+    height: 1100px;
+    position: absolute;
+    bottom: -1050px;
+}
+
+.globe-section {
+    text-align: center;
+    font-family: bauer-bodoni;
+    font-size: 30px;
+    position: relative;
+    margin-top: 40px;
+}
+
+
+/*--- add font---*/
+
+@font-face {
+    font-family: bauer-bodoni;
+    src: url(fonts/bauer-bodoni.otf);
+}
+
+
+/* ---- celeb classes---*/
+
+.bradley {
+    height: 370px;
+    width: auto;
+    position: absolute;
+    bottom: 10px;
+}
+
+.bradley-cloud {
+    height: 370px;
+    width: auto;
+    position: absolute;
+    bottom: -180px;
+}
+
+.kendrick {
+    height: 380px;
+    width: auto;
+    position: absolute;
+    bottom: 0px;
+}
+
+.kendrick-cloud {
+    height: 380px;
+    width: auto;
+    position: absolute;
+    bottom: -180px;
+}
+
+.beyonce {
+    height: 560px;
+    width: auto;
+    position: absolute;
+    bottom: -120px;
+}
+
+.beyonce-cloud {
+    height: 560px;
+    width: auto;
+    position: absolute;
+    bottom: -390px;
+}
+
+.tony {
+    height: 370px;
+    width: auto;
+    position: absolute;
+    bottom: 0;
+}
+
+.tony-cloud {
+    height: 450px;
+    width: auto;
+    position: absolute;
+    bottom: -220px;
+}
+
+.justin {
+    height: 530px;
+    width: auto;
+    position: absolute;
+    bottom: -120px;
+}
+
+.justin-cloud {
+    height: 530px;
+    width: auto;
+    position: absolute;
+    bottom: -400px;
+}
+
+.florida {
+    height: 360px;
+    width: auto;
+    position: absolute;
+    bottom: 0px;
+}
+
+.florida-cloud {
+    height: 360px;
+    width: auto;
+    position: absolute;
+    bottom: -200px;
+}
+
+.muppets {
+    height: 250px;
+    width: auto;
+    position: absolute;
+    bottom: 0px;
+    right: -10px;
+}
+
+.muppets-cloud {
+    height: 280px;
+    width: auto;
+    position: absolute;
+    bottom: -170px;
+}
+
+.muppets-back-cloud {
+    height: 280px;
+    width: auto;
+    position: absolute;
+    bottom: -70px;
+}
+
+.elton {
+    height: 415px;
+    width: auto;
+    position: absolute;
+    bottom: 0px;
+}
+
+.elton-cloud {
+    height: 330px;
+    width: auto;
+    position: absolute;
+    bottom: -170px;
+}
+/*---   Alias Card ----*/
+
+.aliases-parent {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 800px;
+    display: block;
+    margin: 250px auto 650px auto;
+    border-bottom: 7px solid black;
+}
+
+.aliases-child {
+height: 600px;
+display: flex;
+justify-content: center;
+position: relative;
+}
+
+.mother-monster{
+    height: 400px;
+    position: absolute;
+    bottom: 0px;
+
+}
+
+.monster-cloud {
+    height: 450px;
+    position: absolute;
+    bottom: -250px;
+
+
+}
+
+.alias-section {
+font-size: 25px;
+border: 7px solid black;
+background-color: white;
+height: 480px;
+width: 300px;
+display: flex;
+justify-content: center;
+position: absolute;
+text-align: center;
+bottom: -500px;
+line-height: 32px;
+padding-bottom: 15px;
+}
+
+.big-header {
+font-family: bauer-bodoni;
+margin: 30px auto 20px auto;
+
+}
+
+.alias-ul {
+list-style-type: none;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+font-family: bauer-bodoni;
+padding: 0 15px;
+}
+
+/*---- Collaborators----*/
+
+
+.collab-wrap {
+    text-align: center;
+    font-family: bauer-bodoni;
+    font-size: 30px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.collab {
+
+
+}
